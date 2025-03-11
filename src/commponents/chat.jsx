@@ -8,7 +8,7 @@ export const Chat = ({ darkMode, modalFriends, setModalFriends, widthPage }) => 
     const [value, setValue] = useState('');
     const btnScrollMessagesRef = useRef(null);
     const messageContainerRef = useRef(null);
-    const [btnScrollMessagesShow, setBtnScrollMessagesShow] = useState(null)
+    const [btnScrollMessagesShow, setBtnScrollMessagesShow] = useState(true)
 
     const {auth, firestore} = useContext(AuthContext)
     const [user] = useAuthState(auth);
